@@ -1,0 +1,15 @@
+<div>
+    <h3>Aniket Bonde</h3>
+    <h4>Software Developer</h4>
+    <button *ngIf="!isCollapsed" (click)="changeFlag()">Collapsed</button>
+    <button *ngIf="isCollapsed" (click)="changeFlag()">Expand</button>
+    <div *ngIf="!isCollapsed">
+        <h5>Thane West</h5>
+        <h6>Phone ::</h6>
+        <ul>
+            <li *ngFor="let phone of phones">
+                {{ phone }}
+            </li>
+        </ul>
+    </div>
+</div>
